@@ -1,0 +1,279 @@
+.panel {
+  width:100%;
+  min-height:400px;
+  
+  
+  p {
+    text-align: justify;
+  }
+
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    padding-left:.4em;
+  }
+}
+
+.panel-small {
+  max-width:700px;
+}
+
+.panelB {
+  margin-top: -1em;
+}
+
+.panelA {
+  //background: url(../../assets/blur.jpg);
+  //background-size:cover;
+  margin-bottom:-1em;
+  padding:5em;
+}
+
+.panelC {
+  background: url(../../assets/bg1.jpg);
+  background-size:cover;
+  padding:2em;
+
+  h3 {
+    color: white;
+  }
+  p {
+    color:white;
+  }
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  bottom: .5em;
+}
+
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: black;
+  width: 40px;
+  height: 60px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  width: 40px;
+  height: 60px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.owl-next, .owl-prev {
+  margin-top:-20px;
+}
+
+.owl-next i, .owl-prev i {
+  font-size: 35pt;
+  color:white;
+}
+
+.slideshowBanner .owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  box-shadow: 1px 1px 20px 10px #000;
+}
+
+#game .owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  box-shadow: -1px -1px 20px 10px #000;
+  background:black;
+}
+
+
+.owl-next i{
+  margin-right:-5px;
+  margin-top:5px;
+}
+
+.owl-prev i {
+  margin-top:5px;
+  margin-left:-5px;
+}
+
+.plainCard .card-image img {
+  min-height: 315px;
+}
+
+.carouselCard .card-image img{
+  min-height: 255px;
+}
+
+.carouselCardMixAlbum {
+
+  .small {
+    font-size: 10pt !important;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 20%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(1.28, -0.55, 0.265, 1.55);
+    bottom: -0.1em !important;
+  }
+
+}
+
+.carouselCardMixAlbum:hover {
+  .small {
+    height: 100.5%;
+    background: rgba(0, 0, 0, 0.8);
+
+  }
+}
+
+.panelA {
+
+}
+
+.panelB {
+
+}
+
+.panelC {
+
+}
+
+.react-parallax  {
+  min-height:400px;
+}
+
+.react-parallax-content {
+  padding:1em;
+  color:white;
+  width:60%;
+  background: rgba(0,0,0,0.5);
+}
+
+.badges {
+  max-width:250px;
+  margin:1em;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.28, -0.55, 0.265, 1.55);
+}
+
+.badges:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.headerTitle {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 0;
+  height: 0;
+  margin-top:-5em;
+}
+
+.storyPanel {
+  background: rgba(0,0,0,0.4);
+  color: white;
+  padding:1em !important;
+}
+
+.socials {
+  max-width: 600px;
+
+  img {
+    width:45px;
+    margin:0 .2em;
+  }
+
+
+}
+
+.socials-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5em;
+}
+
+@media(max-width:991px) {
+  .react-parallax-content {
+    padding: 1em;
+    padding-top: 3em;
+    color: white;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    height: 39vh;
+  }
+
+  .socials-top {
+    display:none;
+  }
+
+  .badges {
+    display: block;
+    margin: 1em auto 1em auto;
+  }
+
+  .react-parallax-content p {
+    text-align: center;
+  }
+
+  .video-section {
+    display:none;
+  }
+
+  .panelA {
+    margin-bottom: 0;
+    padding: 1em;
+    background: url('../../assets/fade1.jpg') top center no-repeat scroll;
+  }
+
+  .carouselCardMixAlbum:hover {
+    .small {
+      height: auto;
+      background: rgba(0, 0, 0, 0.8);
+
+    }
+  }
+
+
+
+}
+
+@media(max-width:600px) {
+  footer.page-footer {
+    text-align: center;
+  }
+
+}
